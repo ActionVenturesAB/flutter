@@ -335,7 +335,7 @@ class _MaterialLocalizationsDelegate extends LocalizationsDelegate<MaterialLocal
   const _MaterialLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) => locale.languageCode == 'en';
+  bool isSupported(Locale locale) => locale.languageCode == 'en' || locale.languageCode == 'sv';
 
   @override
   Future<MaterialLocalizations> load(Locale locale) => DefaultMaterialLocalizations.load(locale);
